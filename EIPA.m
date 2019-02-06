@@ -42,6 +42,12 @@ for i = 1:nx
             G(n,n) = 1;
         else
           G(n,n) = -4;  
+          
+          if(i>10 && i < 20)
+              if( j>10 && j<20)
+                  G(n,n) = -2;
+              end
+          end
           G(n,nxm) = 1;
           G(n,nxp) = 1;
           G(nyp,n) = 1;
